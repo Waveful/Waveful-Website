@@ -4,15 +4,15 @@ import { Avatar, Button, Image, Link } from "@heroui/react";
 export default function Nav() {
   return (
     <Navbar 
-        maxWidth={"full"} 
+        maxWidth={"2xl"} 
         isBlurred={false}
-        position={"sticky"}
+        position={"static"}
         classNames={{
             base: "bg-transparent",
             content: "bg-transparent",
             item: "bg-transparent",
         }}
-        className={"py-6"}
+        className={"fixed top-0 left-0 w-full z-[20] py-6"}
     >
         <NavbarBrand className="text-2xl font-bold">
             <Button 

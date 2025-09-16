@@ -1,11 +1,9 @@
 //NextJS
 import Head from "next/head";
 
-//Hero
-import { Button } from "@heroui/react";
-
 //Components
 import Hero from "@/components/Hero";
+import Nav from "@/components/Nav";
 
 
 
@@ -17,7 +15,7 @@ export default function Home() {
       <meta name="description" content="Waveful" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main>
+    <main className="min-h-screen">
       <Hero />
     </main>
     </>

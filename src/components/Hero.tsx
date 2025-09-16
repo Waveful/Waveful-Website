@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTiktok } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { Button, Link } from "@heroui/react";
+import { Button, Image, Link } from "@heroui/react";
 
 export default function Hero() {
   const backgroundUrl = "https://cdn.sanity.io/files/w9oq2e5b/production/057dd62b6130592e23651dea088c27644cf71239.mp4";
@@ -19,40 +19,42 @@ export default function Hero() {
 
       <div aria-hidden className="absolute inset-0 bg-black/50 z-[1]" />
 
-      <h1 className="relative z-[2] text-2xl md:text-6xl lg:text-8xl font-semibold leading-tight px-6">
-        Your Community. Your Growth. Your Wave.
+      <h1 className="relative z-[2] text-4xl md:text-4xl lg:text-6xl font-semibold leading-tight px-6">
+        Your Community. <br className={"block md:hidden"} /> Your Growth.<br className={"block md:hidden"} /> Your Wave.
       </h1>
 
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-[2] flex flex-wrap items-center justify-center gap-3 px-4">
+      <div className="absolute bottom-4 z-[2] flex flex-wrap items-center justify-center gap-3 px-4">
         <Button
           as={Link}
-          href="/contact"
+          href="https://help.waveful.com"
           className="rounded-full bg-white/10 hover:bg-white/20 text-sm backdrop-blur transition-colors"
         >
           Contact us
         </Button>
         <Button
           as={Link}
-          href="/privacy"
+          href="/legal/privacy"
           className="rounded-full bg-white/10 hover:bg-white/20 text-sm backdrop-blur transition-colors"
         >
           Privacy Policy
         </Button>
         <Button
           as={Link}
-          href="/terms"
+          href="/legal/terms-of-use"
           className="rounded-full bg-white/10 hover:bg-white/20 text-sm backdrop-blur transition-colors"
         >
           Terms Of Use
         </Button>
+
         <Button
           as={Link}
-          href="/cookies"
+          href="/legal/cookies"
           className="rounded-full bg-white/10 hover:bg-white/20 text-sm backdrop-blur transition-colors"
         >
           Cookie Policy
         </Button>
+
         <Button
           as={Link}
           href="https://www.tiktok.com/@waveful"
@@ -63,16 +65,19 @@ export default function Hero() {
         >
           <FaTiktok className="h-5 w-5" />
         </Button>
+
         <Button
           as={Link}
-          href="https://www.instagram.com/waveful"
+          href="https://www.waveful.app/accounts/Waveful"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
-        >
-          <FaInstagram className="h-5 w-5" />
-        </Button>
+          startContent={
+            <Image src={"/logo_waveful_white.png"} className={"h-8 x-8 invert"} />
+          }
+        />
+
       </div>
 
     </section>
