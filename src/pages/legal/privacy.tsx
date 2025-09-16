@@ -1,5 +1,8 @@
-import Hero from "@/components/Hero";
+//NextJS
 import Head from "next/head";
+
+//Components
+import Hero from "@/components/Hero";
 
 export default function PrivacyPolicy() {
   return (

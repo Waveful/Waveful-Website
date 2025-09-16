@@ -1,6 +1,6 @@
 import React from "react";
 import { FaTiktok } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaApple, FaGooglePlay } from "react-icons/fa";
 import { Button, Image, Link } from "@heroui/react";
 
 export default function Hero() {
@@ -19,10 +19,44 @@ export default function Hero() {
 
       <div aria-hidden className="absolute inset-0 bg-black/50 z-[1]" />
 
+      <div className={"flex flex-col"}>
       <h1 className="relative z-[2] text-4xl md:text-4xl lg:text-6xl font-semibold leading-tight px-6">
         Your Community. <br className={"block md:hidden"} /> Your Growth.<br className={"block md:hidden"} /> Your Wave.
       </h1>
 
+      <div className="relative z-[2] mt-6 flex flex-wrap items-center justify-center gap-3 px-4">
+        <Button
+          as={Link}
+          href="https://apps.apple.com/"
+          isExternal
+          rel="noopener noreferrer"
+          radius={"md"}
+          size={"lg"}
+          className="w-56 h-20 flex items-center gap-3 border border-default-100 bg-black/60 hover:bg-black/80 text-left backdrop-blur transition-colors"
+          startContent={<FaApple className="h-12 w-12" />}
+        >
+          <span className="flex flex-col leading-tight text-left">
+            <span className="text-xs opacity-80">Download on the</span>
+            <span className="text-lg font-medium">App Store</span>
+          </span>
+        </Button>
+        <Button
+          as={Link}
+          href="https://apps.apple.com/"
+          isExternal
+          rel="noopener noreferrer"
+          radius={"md"}
+          size={"lg"}
+          className="w-56 h-20 flex items-center gap-3 border border-default-100 bg-black/60 hover:bg-black/80 text-left backdrop-blur transition-colors"
+          startContent={<FaGooglePlay className="h-12 w-12" />}
+        >
+          <span className="flex flex-col leading-tight text-left">
+            <span className="text-xs opacity-80">Download on the</span>
+            <span className="text-lg font-medium">Play Store</span>
+          </span>
+        </Button>
+      </div>
+      </div>
 
       <div className="absolute bottom-4 z-[2] flex flex-wrap items-center justify-center gap-3 px-4">
         <Button
