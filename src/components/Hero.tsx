@@ -1,6 +1,6 @@
 import React from "react";
 import { FaTiktok } from "react-icons/fa6";
-import { FaInstagram, FaApple, FaGooglePlay } from "react-icons/fa";
+import { FaApple, FaGooglePlay } from "react-icons/fa";
 import { Button, Image, Link } from "@heroui/react";
 
 export default function Hero() {

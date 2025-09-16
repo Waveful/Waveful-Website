@@ -1,5 +1,5 @@
-import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem,   NavbarMenuToggle,  NavbarMenu,  NavbarMenuItem} from "@heroui/navbar";
-import { Avatar, Button, Image, Link } from "@heroui/react";
+import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem } from "@heroui/navbar";
+import { Button, Image, Link } from "@heroui/react";
 
 export default function Nav() {
   return (
