@@ -30,7 +30,7 @@ export default function Hero() {
           href="https://apps.apple.com/"
           isExternal
           rel="noopener noreferrer"
-          radius={"md"}
+          radius={"lg"}
           size={"lg"}
           className="w-56 h-20 flex items-center gap-3 border border-default-100 bg-black/60 hover:bg-black/80 text-left backdrop-blur transition-colors"
           startContent={<FaApple className="h-12 w-12" />}
@@ -45,7 +45,7 @@ export default function Hero() {
           href="https://apps.apple.com/"
           isExternal
           rel="noopener noreferrer"
-          radius={"md"}
+          radius={"lg"}
           size={"lg"}
           className="w-56 h-20 flex items-center gap-3 border border-default-100 bg-black/60 hover:bg-black/80 text-left backdrop-blur transition-colors"
           startContent={<FaGooglePlay className="h-12 w-12" />}
