@@ -91,16 +91,16 @@ export default function About() {
     <section className="w-full mt-12 py-16 md:py-24 bg-black/50">
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-center text-default-900 mb-10">
-        <h2 className={"text-3xl md:text-4xl font-semibold"}>
+        <h2 className={"text-3xl md:text-6xl font-semibold"}>
           Grow your community. 
           Meet new people.
         </h2>
         <p className={"mt-8 test-sm justify-center"}>
-         Waveful is where creators and fans connect through content, challenges, and communities — built to help you grow faster and earn more. 
+         Waveful is where creators and fans connect through content, challenges, and communities built to help you grow faster and earn more. 
          Share your best moments, start challenges, and turn your audience into an active community that supports you.
         </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-14 justify-items-center">
           <Stat label="Users" target={3_000_000} />
           <Stat label="Posts" target={40_000_000} />
           <Stat label="Creators" target={130_000} />
