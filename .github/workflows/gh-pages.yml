@@ -35,6 +35,9 @@ jobs:
           BASE_PATH: "/Waveful-Website"
         run: npm run build:static
 
+      - name: Add .nojekyll to allow _next assets on Pages
+        run: echo > out/.nojekyll
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
