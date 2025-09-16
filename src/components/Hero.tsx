@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="relative z-[2] mt-6 flex flex-wrap items-center justify-center gap-3 px-4">
         <Button
           as={Link}
-          href="https://apps.apple.com/"
+          href="https://apps.apple.com/us/app/waveful-become-a-creator/id1532913255 "
           isExternal
           rel="noopener noreferrer"
           radius={"lg"}
@@ -42,7 +42,7 @@ export default function Hero() {
         </Button>
         <Button
           as={Link}
-          href="https://apps.apple.com/"
+          href="https://play.google.com/store/apps/details?id=app.waveful"
           isExternal
           rel="noopener noreferrer"
           radius={"lg"}

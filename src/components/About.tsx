@@ -88,7 +88,7 @@ function Stat({ label, target, suffix = "+" }: StatProps) {
 
 export default function About() {
   return (
-    <section className="w-full mt-12 py-16 md:py-24 bg-black/50">
+    <section className="w-full mt-24 py-16 md:py-24 bg-black/50">
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-center text-default-900 mb-10">
         <h2 className={"text-3xl md:text-6xl font-semibold"}>
