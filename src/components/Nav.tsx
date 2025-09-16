@@ -4,21 +4,22 @@ import { Avatar, Button, Image, Link } from "@heroui/react";
 export default function Nav() {
   return (
     <Navbar 
-        maxWidth={"2xl"} 
+        maxWidth={"full"} 
         isBlurred={false}
+        position={"sticky"}
         classNames={{
             base: "bg-transparent",
             content: "bg-transparent",
             item: "bg-transparent",
         }}
-        className={"py-12 "}
+        className={"py-6"}
     >
         <NavbarBrand className="text-2xl font-bold">
             <Button 
                 as={Link} 
                 radius={"none"}
                 href="/" 
-                startContent={<Image src="/logo_waveful_colored.png" alt="Waveful" className={"bg-transparent h-24"} />}
+                startContent={<Image src="/logo_waveful_colored.png" alt="Waveful" className={"hidden md:block bg-transparent h-24"} />}
                 className="text-4xl py-12 bg-transparent text-default-900 font-semibold"
             >
             Waveful
