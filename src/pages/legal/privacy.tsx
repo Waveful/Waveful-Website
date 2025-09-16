@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy | Waveful</title>
+        <title>Privacy Policy - Waveful</title>
         <meta name="robots" content="noindex" />
       </Head>
       <main>

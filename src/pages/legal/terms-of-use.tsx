@@ -5,7 +5,7 @@ export default function TermsOfUse() {
   return (
     <>
       <Head>
-        <title>Terms of Use | Waveful</title>
+        <title>Terms of Use - Waveful</title>
         <meta name="robots" content="noindex" />
       </Head>
       <main>

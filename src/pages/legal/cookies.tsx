@@ -5,7 +5,7 @@ export default function CookiePolicy() {
   return (
     <>
       <Head>
-        <title>Cookie Policy | Waveful</title>
+        <title>Cookie Policy - Waveful</title>
         <meta name="robots" content="noindex" />
       </Head>
       <main>
