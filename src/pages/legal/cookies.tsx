@@ -1,5 +1,5 @@
 
-
+/* eslint-disable react/no-unescaped-entities */
 //NextJS
 import Head from "next/head";
 

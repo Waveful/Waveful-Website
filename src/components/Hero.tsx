@@ -108,7 +108,7 @@ export default function Hero() {
           aria-label="Instagram"
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
           startContent={
-            <Image src={"/logo_waveful_white.png"} className={"h-8 x-8 invert"} />
+            <Image src={"/logo_waveful_white.png"} alt="Waveful Logo" className={"h-8 x-8 invert"} />
           }
         />
 
