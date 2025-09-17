@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTiktok } from "react-icons/fa6";
+import { FaInstagram, FaTiktok } from "react-icons/fa6";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import { Button, Image, Link } from "@heroui/react";
 
@@ -98,6 +98,17 @@ export default function Hero() {
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
         >
           <FaTiktok className="h-5 w-5" />
+        </Button>
+
+        <Button
+          as={Link}
+          href="https://www.instagram.com/waveful"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+          className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
+        >
+          <FaInstagram className="h-5 w-5" />
         </Button>
 
         <Button
