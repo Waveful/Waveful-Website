@@ -10,6 +10,12 @@ function useCountUp({ target, durationMs = 1400, startWhenVisible = true }: UseC
   const [value, setValue] = React.useState<number>(0);
   const ref = React.useRef<HTMLSpanElement | null>(null);
   const startedRef = React.useRef<boolean>(false);
+  
+  function getCountStep(forTarget: number): number {
+    if (forTarget >= 1_000_000) return 100_000; // millions grow by 100k
+    if (forTarget >= 100_000) return 10_000; // hundred-thousands grow by 10k
+    return 1; // keep smooth increments for smaller numbers
+  }
 
   React.useEffect(() => {
     if (!startWhenVisible) {
@@ -31,7 +37,10 @@ function useCountUp({ target, durationMs = 1400, startWhenVisible = true }: UseC
         const elapsed = now - startTime;
         const progress = Math.min(1, elapsed / durationMs);
         const eased = 1 - Math.pow(1 - progress, 3); // cubic ease-out
-        setValue(Math.round(target * eased));
+        const rawValue = target * eased;
+        const step = getCountStep(target);
+        const steppedValue = Math.floor(rawValue / step) * step;
+        setValue(progress < 1 ? steppedValue : target);
         if (progress < 1) requestAnimationFrame(tick);
       };
 
@@ -63,8 +72,16 @@ function useCountUp({ target, durationMs = 1400, startWhenVisible = true }: UseC
 }
 
 function formatCompactNumber(value: number): string {
-  if (value >= 1_000_000) return `${Math.floor(value / 1_000_0) / 100}M`;
-  if (value >= 1_000) return `${Math.floor(value / 10) / 100}K`;
+  if (value >= 1_000_000) {
+    const wholeMillions = value % 1_000_000 === 0;
+    const formatted = (value / 1_000_000).toFixed(wholeMillions ? 0 : 1);
+    return `${formatted}M`;
+  }
+  if (value >= 1_000) {
+    const wholeThousands = value % 1_000 === 0;
+    const formatted = (value / 1_000).toFixed(wholeThousands ? 0 : 1);
+    return `${formatted}K`;
+  }
   return String(value);
 }
 
