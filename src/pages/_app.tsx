@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Poppins } from "next/font/google";
 import Head from "next/head";
 
 //HeroUI
@@ -10,11 +9,6 @@ import {ThemeProvider as NextThemesProvider} from "next-themes";
 //Components
 import Nav from "@/components/Nav";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
 
 const seoData = {
   siteName: "Waveful - Your Community, Your Growth, Your Wave",
@@ -29,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href={seoData.favicon} />
       </Head>
       <NextThemesProvider attribute="class" defaultTheme="dark">
-        <div className={poppins.className}>
+        <div>
           <Nav />
           <Component {...pageProps} />
         </div>
