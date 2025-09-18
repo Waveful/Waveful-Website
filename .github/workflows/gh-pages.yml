@@ -31,9 +31,13 @@ jobs:
         run: npm ci
 
       - name: Build static site
-        env:
-          BASE_PATH: "/Waveful-Website"
         run: npm run build:static
+
+      - name: Fix paths for GitHub Pages
+        run: |
+          find out -name "*.html" -exec sed -i 's|href="/|href="./|g' {} \;
+          find out -name "*.html" -exec sed -i 's|src="/|src="./|g' {} \;
+          find out -name "*.html" -exec sed -i 's|url("/|url("./|g' {} \;
 
       - name: Add .nojekyll to allow _next assets on Pages
         run: echo > out/.nojekyll
