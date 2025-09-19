@@ -37,7 +37,7 @@ export default function Hero() {
             const secondSrc = videoSources[col * 3 + 1];
             const thirdSrc = videoSources[col * 3 + 2];
             return (
-            <div key={col} className="relative h-full overflow-hidden">
+            <div key={col} className={`relative h-full overflow-hidden ${col >= 2 ? 'hidden md:block' : ''}`}>
               <motion.div
                 className="absolute inset-x-0 top-0 h-[300%]"
                 initial={{ y: "0%" }}
