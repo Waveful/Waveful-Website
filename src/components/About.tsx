@@ -109,7 +109,8 @@ export default function About() {
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-center text-default-900 mb-10">
         <h2 className={"text-3xl md:text-6xl font-semibold"}>
-          Grow your community. 
+          Grow your community.
+          <br /> 
           Meet new people.
         </h2>
         <p className={"mt-8 test-sm justify-center"}>
