@@ -12,7 +12,7 @@ import Nav from "@/components/Nav";
 
 const seoData = {
   siteName: "Waveful - Your Community, Your Growth, Your Wave",
-  favicon: "/logo_waveful_colored.png",
+  favicon: "/logo_waveful_coloured.svg",
 };
 
 export default function App({ Component, pageProps }: AppProps) {

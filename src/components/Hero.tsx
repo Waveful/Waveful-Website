@@ -1,7 +1,15 @@
 import React from "react";
-import { FaInstagram, FaTiktok } from "react-icons/fa6";
-import { FaApple, FaGooglePlay } from "react-icons/fa";
+
+//HeroUI
 import { Button, Image, Link } from "@heroui/react";
+
+// Icons
+import { FaApple, FaInstagram } from 'react-icons/fa';
+import { FaTiktok } from 'react-icons/fa6';
+import { SiGoogleplay } from 'react-icons/si';
+
+import { HugeiconsIcon } from '@hugeicons/react';
+
 
 export default function Hero() {
   const backgroundUrl = "https://cdn.sanity.io/files/w9oq2e5b/production/057dd62b6130592e23651dea088c27644cf71239.mp4";
@@ -48,7 +56,7 @@ export default function Hero() {
           radius={"lg"}
           size={"lg"}
           className="w-56 h-20 flex items-center gap-3 border border-default-100 bg-black/60 hover:bg-black/80 text-left backdrop-blur transition-colors"
-          startContent={<FaGooglePlay className="h-12 w-12" />}
+          startContent={<SiGoogleplay className="h-12 w-12" />}
         >
           <span className="flex flex-col leading-tight text-left">
             <span className="text-xs opacity-80">Download on the</span>
@@ -96,9 +104,10 @@ export default function Hero() {
           rel="noopener noreferrer"
           aria-label="TikTok"
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
-        >
-          <FaTiktok className="h-5 w-5" />
-        </Button>
+          startContent={
+            <FaTiktok className="h-5 w-5" />
+          }
+        />
 
         <Button
           as={Link}
@@ -107,19 +116,20 @@ export default function Hero() {
           rel="noopener noreferrer"
           aria-label="TikTok"
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
-        >
-          <FaInstagram className="h-5 w-5" />
-        </Button>
+          startContent={
+            <FaInstagram className="h-5 w-5" />
+          }
+        />
 
         <Button
           as={Link}
           href="https://www.waveful.app/accounts/Waveful"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Instagram"
+          aria-label="Waveful"
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
           startContent={
-            <Image src={"/logo_waveful_white.png"} alt="Waveful Logo" className={"h-8 x-8 invert"} />
+            <Image src={"/logo_waveful_white.svg"} alt="Waveful Logo" className={"h-6 x-6"} />
           }
         />
 
