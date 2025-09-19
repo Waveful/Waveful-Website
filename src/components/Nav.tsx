@@ -30,7 +30,7 @@ export default function Nav() {
                 <Button 
                     as={Link} 
                     radius={"lg"}
-                    href="/"
+                    href="https://waveful.app/download"
                     size={"lg"}
                     className="py-8 text-xl font-semibold text-default-100 bg-default-900"
                 >
