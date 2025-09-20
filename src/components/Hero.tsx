@@ -12,18 +12,26 @@ import { SiGoogleplay } from 'react-icons/si';
 
 export default function Hero() {
   const videoSources = [
-    "/creators/creator_000.MP4",
-    "/creators/creator_001.MP4",
-    "/creators/creator_002.MP4",
-    "/creators/creator_003.MP4",
-    "/creators/creator_004.MP4",
-    "/creators/creator_005.MP4",
-    "/creators/creator_006.MP4",
-    "/creators/creator_007.MP4",
-    "/creators/creator_008.MP4",
-    "/creators/creator_009.MP4",
-    "/creators/creator_010.MP4",
-    "/creators/creator_011.MP4",
+    "/videos/creator_000.mp4",
+    "/videos/creator_001.mp4",
+    "/videos/creator_002.mp4",
+    "/videos/creator_003.mp4",
+    "/videos/creator_004.mp4",
+    "/videos/creator_005.mp4",
+    "/videos/creator_006.mp4",
+    "/videos/creator_007.mp4",
+    "/videos/creator_008.mp4",
+    "/videos/creator_009.mp4",
+    "/videos/creator_010.mp4",
+    "/videos/creator_011.mp4",
+    "/videos/creator_012.mp4",
+    "/videos/creator_013.mp4",
+    "/videos/creator_014.mp4",
+    "/videos/creator_015.mp4",
+    "/videos/creator_016.mp4",
+    "/videos/creator_017.mp4",
+    "/videos/creator_018.mp4",
+    "/videos/creator_019.mp4",
   ];
 
   return (
