@@ -19,7 +19,7 @@ export default function Nav() {
                 as={Link} 
                 radius={"none"}
                 href="/" 
-                startContent={<Image src="/logo_waveful_white.svg" alt="Waveful" className={"block bg-transparent h-16"} />}
+                startContent={<Image src="/app_icon_waveful_rounded.svg" alt="Waveful" className={"block bg-transparent h-16"} />}
                 className="text-4xl py-12 bg-transparent text-default-900 font-semibold"
             >
             <span className="hidden md:inline">Waveful</span>
