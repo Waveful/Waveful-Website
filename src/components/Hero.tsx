@@ -39,7 +39,7 @@ export default function Hero() {
     <section className="relative h-screen w-full flex items-center justify-center text-white text-center overflow-hidden">
       {/* Background grid of auto-scrolling vertical videos */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 w-full h-full">
+        <div className="px-2 md:px-4 grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 w-full h-full">
           {[0, 1, 2, 3, 4].map((col) => {
             const firstSrc = videoSources[col * 4];
             const secondSrc = videoSources[col * 4 + 1];
@@ -48,7 +48,7 @@ export default function Hero() {
             return (
             <div key={col} className={`relative h-full overflow-hidden ${col >= 2 ? 'hidden md:block' : ''}`}>
               <motion.div
-                className="absolute inset-x-0 top-0 h-[400%]"
+                className="absolute inset-x-0 top-0 h-[300%]"
                 initial={{ y: "0%" }}
                 animate={{ y: ["0%", "-66.67%"] }}
                 transition={{
