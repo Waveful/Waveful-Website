@@ -39,26 +39,27 @@ export default function Hero() {
     <section className="relative h-screen w-full flex items-center justify-center text-white text-center overflow-hidden">
       {/* Background grid of auto-scrolling vertical videos */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full h-full">
-          {[0, 1, 2, 3].map((col) => {
-            const firstSrc = videoSources[col * 3];
-            const secondSrc = videoSources[col * 3 + 1];
-            const thirdSrc = videoSources[col * 3 + 2];
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 w-full h-full">
+          {[0, 1, 2, 3, 4].map((col) => {
+            const firstSrc = videoSources[col * 4];
+            const secondSrc = videoSources[col * 4 + 1];
+            const thirdSrc = videoSources[col * 4 + 2];
+            const fourthSrc = videoSources[col * 4 + 3];
             return (
             <div key={col} className={`relative h-full overflow-hidden ${col >= 2 ? 'hidden md:block' : ''}`}>
               <motion.div
-                className="absolute inset-x-0 top-0 h-[300%]"
+                className="absolute inset-x-0 top-0 h-[400%]"
                 initial={{ y: "0%" }}
                 animate={{ y: ["0%", "-66.67%"] }}
                 transition={{
-                  duration: col % 4 === 0 ? 20 : col % 4 === 1 ? 25 : col % 4 === 2 ? 30 : 35,
+                  duration: col % 5 === 0 ? 12 : col % 5 === 1 ? 15 : col % 5 === 2 ? 18 : col % 5 === 3 ? 21 : 24,
                   ease: "linear",
                   repeat: Infinity,
                   repeatType: "loop",
-                  delay: col * 0.5,
+                  delay: col * 0.3,
                 }}
               >
-                <div className="h-1/3 py-2">
+                <div className="h-1/4 py-2">
                   <video
                     className="w-full h-full object-cover rounded-2xl"
                     src={firstSrc}
@@ -69,7 +70,7 @@ export default function Hero() {
                     preload="metadata"
                   />
                 </div>
-                <div className="h-1/3 py-2">
+                <div className="h-1/4 py-2">
                   <video
                     className="w-full h-full object-cover rounded-2xl"
                     src={secondSrc}
@@ -80,10 +81,21 @@ export default function Hero() {
                     preload="metadata"
                   />
                 </div>
-                <div className="h-1/3 py-2">
+                <div className="h-1/4 py-2">
                   <video
                     className="w-full h-full object-cover rounded-2xl"
                     src={thirdSrc}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                  />
+                </div>
+                <div className="h-1/4 py-2">
+                  <video
+                    className="w-full h-full object-cover rounded-2xl"
+                    src={fourthSrc}
                     autoPlay
                     muted
                     loop
