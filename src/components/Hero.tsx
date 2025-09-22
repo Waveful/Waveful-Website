@@ -32,6 +32,10 @@ export default function Hero() {
     "/videos/creator_017.mp4",
     "/videos/creator_018.mp4",
     "/videos/creator_019.mp4",
+    "/videos/creator_020.mp4",
+    "/videos/creator_021.mp4",
+    "/videos/creator_022.mp4",
+    "/videos/creator_023.mp4",
   ];
 
   return (
@@ -39,12 +43,15 @@ export default function Hero() {
     <section className="relative h-screen w-full flex items-center justify-center text-white text-center overflow-hidden">
       {/* Background grid of auto-scrolling vertical videos */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="px-2 md:px-4 grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 w-full h-full">
-          {[0, 1, 2, 3, 4].map((col) => {
-            const firstSrc = videoSources[col * 4];
-            const secondSrc = videoSources[col * 4 + 1];
-            const thirdSrc = videoSources[col * 4 + 2];
-            const fourthSrc = videoSources[col * 4 + 3];
+        <div className="px-2 md:px-4 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 w-full h-full">
+          {(() => {
+            const shuffled = [...videoSources].sort(() => Math.random() - 0.5);
+            const selected = shuffled.slice(0, 16);
+            return [0, 1, 2, 3].map((col) => {
+              const firstSrc = selected[col * 4];
+              const secondSrc = selected[col * 4 + 1];
+              const thirdSrc = selected[col * 4 + 2];
+              const fourthSrc = selected[col * 4 + 3];
             return (
             <div key={col} className={`relative h-full overflow-hidden ${col >= 2 ? 'hidden md:block' : ''}`}>
               <motion.div
@@ -52,7 +59,7 @@ export default function Hero() {
                 initial={{ y: "0%" }}
                 animate={{ y: ["0%", "-66.67%"] }}
                 transition={{
-                  duration: col % 5 === 0 ? 12 : col % 5 === 1 ? 15 : col % 5 === 2 ? 18 : col % 5 === 3 ? 21 : 24,
+                  duration: col % 4 === 0 ? 12 : col % 4 === 1 ? 15 : col % 4 === 2 ? 18 : 21,
                   ease: "linear",
                   repeat: Infinity,
                   repeatType: "loop",
@@ -106,7 +113,8 @@ export default function Hero() {
               </motion.div>
             </div>
             );
-          })}
+            });
+          })()}
         </div>
       </div>
 
