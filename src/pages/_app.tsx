@@ -1,4 +1,8 @@
+
+//Styles
 import "@/styles/globals.css";
+
+//NextJS
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
@@ -10,8 +14,9 @@ import {ThemeProvider as NextThemesProvider} from "next-themes";
 import Nav from "@/components/Nav";
 
 
+//SEO
 const seoData = {
-  siteName: "Waveful - Your Community, Your Growth, Your Wave",
+  siteName: "Waveful - Your Community, Your Wave",
   favicon: "/app_icon_waveful_rounded.png",
 };
 

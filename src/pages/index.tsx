@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Waveful - Your Community, Your Growth, Your Wave.</title>
+      <title>Waveful - Your Community, Your Wave.</title>
     </Head>
     <main className="min-h-screen">
       <About />
