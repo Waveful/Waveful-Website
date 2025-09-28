@@ -122,7 +122,7 @@ export default function Hero() {
 
       <div className={"flex flex-col"}>
       <h1 className="relative z-[2] text-4xl md:text-4xl lg:text-6xl font-semibold leading-tight px-6">
-        Your Community. <br className={"block md:hidden"} /> Your Growth.<br className={"block md:hidden"} /> Your Wave.
+        Your Community. <br className={"block md:hidden"} /> Your Wave.
       </h1>
 
       <div className="relative z-[2] mt-6 flex flex-wrap items-center justify-center gap-3 px-4">
