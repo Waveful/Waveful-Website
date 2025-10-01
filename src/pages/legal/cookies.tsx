@@ -5,7 +5,7 @@ import Head from "next/head";
 import Hero from "@/components/Hero";
 
 // Translation
-import { useTranslation } from '@/hooks/useTranslation';
+import useTranslation from "@/hooks/useTranslation";
 
 export default function Cookies() {
   const { t } = useTranslation();

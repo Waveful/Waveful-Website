@@ -10,7 +10,7 @@ import { FaTiktok } from 'react-icons/fa6';
 import { SiGoogleplay } from 'react-icons/si';
 
 // Translation and Language
-import { useTranslation } from '@/hooks/useTranslation';
+import useTranslation from "@/hooks/useTranslation";
 import { useLanguage } from '@/contexts/LanguageContext';
 
 

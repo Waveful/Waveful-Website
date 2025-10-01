@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import Hero from "@/components/Hero";
 
 // Translation
-import { useTranslation } from '@/hooks/useTranslation';
+import useTranslation from "@/hooks/useTranslation";
 
 interface LegalDocument {
   title: string;

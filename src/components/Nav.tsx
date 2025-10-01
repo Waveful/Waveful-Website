@@ -1,7 +1,7 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/navbar";
 import { Button, Image, Link } from "@heroui/react";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { useTranslation } from "@/hooks/useTranslation";
+import useTranslation from "@/hooks/useTranslation";
 
 export default function Nav() {
   const { t } = useTranslation();
