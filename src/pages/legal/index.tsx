@@ -51,7 +51,7 @@ export default function LegalIndex() {
               </p>
             </div>
             
-            {documents.length > 0 ? (
+            {documents.length > 0 && (
               <div className="mt-8 space-y-4">
                 {documents.map((doc: LegalDocument, index: number) => (
                   <Link 
@@ -63,18 +63,6 @@ export default function LegalIndex() {
                     <p className="text-gray-300">{doc.description}</p>
                   </Link>
                 ))}
-              </div>
-            ) : (
-              <div className="mt-8 p-6 bg-gray-800/50 rounded-lg">
-                <p className="text-gray-300">Unable to load legal documents at this time. Please try again later.</p>
-                <div className="mt-4">
-                  <Link 
-                    href="/" 
-                    className="text-blue-400 hover:text-blue-300 transition-colors"
-                  >
-                    Return to home
-                  </Link>
-                </div>
               </div>
             )}
           </div>
