@@ -1,11 +1,12 @@
-import { useTranslation as originalUseTranslation } from '@/hooks/useTranslation';
+// This file provides type information for the useTranslation hook
 
 declare module '@/hooks/useTranslation' {
   interface TranslationReturn {
     t: <T = string>(key: string, returnRaw?: boolean) => T | string;
+    locale: string;
   }
   
-  function useTranslation(): TranslationReturn;
+  const useTranslation: () => TranslationReturn;
   
   export default useTranslation;
 }

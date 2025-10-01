@@ -52,3 +52,5 @@ const useTranslation = () => {
 
   return { t, locale: language };
 };
+
+export default useTranslation;
