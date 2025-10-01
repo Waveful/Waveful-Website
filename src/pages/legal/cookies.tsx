@@ -11,7 +11,6 @@ export default function CookiePolicy() {
     <>
       <Head>
         <title>Cookie Policy - Waveful</title>
-        <meta name="robots" content="noindex" />
       </Head>
       <main>
         <section className="mx-auto max-w-[840px] mt-24 px-5 py-14">
@@ -96,7 +95,6 @@ export default function CookiePolicy() {
           _fbp: temporary, non-techincal (profiling), third-party cookie, created by Meta; used to analyze the results of marketing campaigns and promotional campaigns carried out through Meta. This cookie is installed only with the user's consent. This cookie is currently disabled and not installed anymore.
 
         </section>
-
         <Hero />
       </main>
     </>

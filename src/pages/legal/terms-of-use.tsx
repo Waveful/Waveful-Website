@@ -10,7 +10,6 @@ export default function TermsOfUse() {
     <>
       <Head>
         <title>Terms of Use - Waveful</title>
-        <meta name="robots" content="noindex" />
       </Head>
       <main>
         <section className="mx-auto max-w-[840px] mt-24 px-5 py-14">

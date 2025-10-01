@@ -167,19 +167,13 @@ export default function Hero() {
         >
           Contact us
         </Button>
+
         <Button
           as={Link}
-          href="/legal/privacy"
+          href="/legal"
           className="rounded-full bg-white/10 hover:bg-white/20 text-sm backdrop-blur transition-colors"
         >
-          Privacy Policy
-        </Button>
-        <Button
-          as={Link}
-          href="/legal/terms-of-use"
-          className="rounded-full bg-white/10 hover:bg-white/20 text-sm backdrop-blur transition-colors"
-        >
-          Terms Of Use
+          Legal
         </Button>
 
         <Button

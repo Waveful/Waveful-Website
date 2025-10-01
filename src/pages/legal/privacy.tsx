@@ -10,7 +10,6 @@ export default function PrivacyPolicy() {
     <>
       <Head>
         <title>Privacy Policy - Waveful</title>
-        <meta name="robots" content="noindex" />
       </Head>
       <main>
         <section className="mx-auto max-w-[840px] mt-24 px-5 py-14">
@@ -155,7 +154,6 @@ export default function PrivacyPolicy() {
 
           This Privacy Policy was published on December 23, 2022.
         </section>
-
         <Hero />
       </main>
     </>
