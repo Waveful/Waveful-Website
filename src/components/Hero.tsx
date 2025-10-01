@@ -127,7 +127,7 @@ export default function Hero() {
       <div aria-hidden className="absolute inset-0 bg-black/50 z-[1]" />
 
       <div className={"flex flex-col"}>
-      <h1 className="relative z-[2] text-4xl md:text-4xl lg:text-6xl font-semibold leading-tight px-6">
+      <h1 className="relative z-[2] text-5xl md:text-4xl lg:text-6xl font-semibold leading-tight px-6">
         {t('hero.title')}
       </h1>
 
@@ -143,7 +143,7 @@ export default function Hero() {
           startContent={<FaApple className="h-12 w-12" />}
         >
           <span className="flex flex-col leading-tight text-left">
-            <span className="text-xs opacity-80">{t('hero.appStore.download')}</span>
+            <span className="text-sm opacity-80">{t('hero.appStore.download')}</span>
             <span className="text-lg font-medium">{t('hero.appStore.name')}</span>
           </span>
         </Button>
@@ -158,7 +158,7 @@ export default function Hero() {
           startContent={<SiGoogleplay className="h-12 w-12" />}
         >
           <span className="flex flex-col leading-tight text-left">
-            <span className="text-xs opacity-80">{t('hero.playStore.download')}</span>
+            <span className="text-sm opacity-80">{t('hero.playStore.download')}</span>
             <span className="text-lg font-medium">{t('hero.playStore.name')}</span>
           </span>
         </Button>
