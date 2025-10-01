@@ -1,38 +1,74 @@
-
-/* eslint-disable react/no-unescaped-entities */
 //NextJS
 import Head from "next/head";
 
 //Components
 import Hero from "@/components/Hero";
 
-export default function CookiePolicy() {
+// Translation
+import { useTranslation } from '@/hooks/useTranslation';
+
+export default function Cookies() {
+  const { t } = useTranslation();
+  
   return (
     <>
       <Head>
-        <title>Cookie Policy - Waveful</title>
+        <title>{t('cookies.title')} - Waveful</title>
       </Head>
       <main>
         <section className="mx-auto max-w-[840px] mt-24 px-5 py-14">
-          <h1 className="text-3xl font-bold mb-4">Cookie Policy</h1>
-          <h2 className="text-xl font-bold mt-6 mb-2">Hi 👋</h2>
-          <p className="mb-4">I'm Waveful, the creator-friendly social network where everyone can become a creator 🌊</p>
-          <p className="mb-4">Before diving into our cookie policy, let me tell you what you can find in this page. We will start with a general explanation on how tracking tools (also known as "cookies") work, the current classification of tracking tools and how to manage cookies on your browser. After this introductory explanations you can find a general explanation on which category of cookies are used by Waveful and then an in-depth list of the cookies used by Waveful.</p>
-          <p className="mb-6">So let's start...</p>
+          <h1 className="text-3xl font-bold mb-4">{t('cookies.title')}</h1>
+          <h2 className="text-xl font-bold mt-6 mb-2">{t('cookies.intro')}</h2>
+          <p className="mb-4">{t('cookies.welcome')}</p>
+          <p className="mb-4">{t('cookies.description')}</p>
+          <p className="mb-6">{t('cookies.mission')}</p>
+          <p className="mb-6">{t('cookies.dataUsage')}</p>
+          <p className="mb-6" dangerouslySetInnerHTML={{
+            __html: t('privacy.contact').replace('${email}', '<a href="mailto:privacy@waveful.app" class="underline">privacy@waveful.app</a>')
+          }} />
+          
+          <p className="mb-6">
+            This cookie policy is provided, pursuant to articles 13 and 122 of the Code regarding the protection of personal data 
+            (Legislative Decree 196/03, the so-called "Privacy Code") and the current provisions of the Supervisory Authority 
+            regarding Cookies and other Tracking Tools (as defined below), to those who connect (hereafter also defined as "Users") 
+            to this website (hereinafter the "Website") managed by Waveful S.r.l., with headquarters in Italy, 20121 Milan (MI), 
+            Via Daniele Manin 3, VAT Identification Number IT12343330960, e-mail privacy@waveful.app ("Controller") in relation 
+            to the use of cookies.
+          </p>
 
-          <h2 className="text-xl font-bold mt-6 mb-2">Introduction</h2>
-          This cookie policy is provided, pursuant to articles 13 and 122 of the Code regarding the protection of personal data (Legislative Decree 196/03, the so-called "Privacy Code") and the current provisions of the Supervisory Authority regarding Cookies and other Tracking Tools (as defined below), to those who connect (hereafter also defined as “Users") to this website (hereinafter the "Website") managed by Waveful S.r.l., with headquarters in Italy, 20121 Milan (MI), Via Daniele Manin 3, VAT Identification Number IT12343330960, e-mail privacy@waveful.app ("Controller") in relation to the use of cookies.
-
-          How Tracking Tools Work
-          The tracking tools ("Tracking Tools") are divided into two main categories:
-
-          Cookies;
-          the Other Tracking Tools.
-          Cookies ("Cookies") are small text strings - which may include personal data (e.g. IP address, username, e-mail address, etc.) and technical information (e.g. language settings, device type) - that web servers send to the user's terminal (personal computer or mobile device such as tablet or smartphone), where they are stored (e.g. in the browser's memory), and then incorporated in any subsequent HTTP request resent.
-
-          Cookies are used for specific purposes, such as computer authentication, session monitoring and the storage of information on websites (without the use of cookies some operations would be very complex or impossible to perform), also with reference to the identification preferences based on the browsing experience. While browsing a website, the User may also receive Cookies on his terminal from different websites or web servers (so-called "Third Parties") which may contain other information relating to the visited website (such as, for example, images, maps, sounds, specific links to pages of other domains).
-
-          There are also other tracking tools (e.g. the so-called "Fingerprinting", "Pixel Tag" etc.) which, while based on a different technology, share similar purposes with Cookies and achieve the same results (the "Other Tracking Tools"). These tools, unlike Cookies, do not store information within the user's device and are not directly removable by the user himself through the browser settings; it is therefore necessary that the user exercises the right to revoke the authorization for their use through the features made available on the website by the Controller to review his choices.
+          <h2 className="text-xl font-bold mt-6 mb-2">{t('cookies.howTrackingToolsWork')}</h2>
+          <p className="mb-4">
+            The tracking tools ("Tracking Tools") are divided into two main categories:
+          </p>
+          <ul className="list-disc pl-6 mb-4">
+            <li className="mb-2">Cookies</li>
+            <li>The Other Tracking Tools</li>
+          </ul>
+          
+          <p className="mb-4">
+            Cookies ("Cookies") are small text strings - which may include personal data (e.g. IP address, username, 
+            e-mail address, etc.) and technical information (e.g. language settings, device type) - that web servers 
+            send to the user's terminal (personal computer or mobile device such as tablet or smartphone), where they 
+            are stored (e.g. in the browser's memory), and then incorporated in any subsequent HTTP request resent.
+          </p>
+          
+          <p className="mb-4">
+            Cookies are used for specific purposes, such as computer authentication, session monitoring and the storage 
+            of information on websites (without the use of cookies some operations would be very complex or impossible 
+            to perform), also with reference to the identification preferences based on the browsing experience. 
+            While browsing a website, the User may also receive Cookies on his terminal from different websites or 
+            web servers (so-called "Third Parties") which may contain other information relating to the visited website 
+            (such as, for example, images, maps, sounds, specific links to pages of other domains).
+          </p>
+          
+          <p className="mb-6">
+            There are also other tracking tools (e.g. the so-called "Fingerprinting", "Pixel Tag" etc.) which, while based 
+            on a different technology, share similar purposes with Cookies and achieve the same results (the "Other Tracking Tools"). 
+            These tools, unlike Cookies, do not store information within the user's device and are not directly removable 
+            by the user himself through the browser settings; it is therefore necessary that the user exercises the right 
+            to revoke the authorization for their use through the features made available on the website by the Controller 
+            to review his choices.
+          </p>
 
           Classification of Tracking Tools
           Type of tool

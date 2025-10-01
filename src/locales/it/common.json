@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "contact": "Contatti"
+  },
+  "home": {
+    "title": "La Tua Community, La Tua Onda.",
+    "welcome": "Benvenuto su Waveful",
+    "downloadApp": "Scarica l'App",
+    "joinCommunity": "Unisciti alla nostra community di creatori di contenuti"
+  },
+  "hero": {
+    "title": "La Tua Community, La Tua Wave.",
+    "subtitle": "Connettiti con il tuo pubblico come mai prima d'ora",
+    "download": "Scarica Ora",
+    "availableOn": "Disponibile su",
+    "appStore": {
+      "download": "Scarica su",
+      "name": "App Store"
+    },
+    "playStore": {
+      "download": "Scarica su",
+      "name": "Play Store"
+    },
+    "contactUs": "Contattaci",
+    "legal": "Legale",
+    "cookiePolicy": "Informativa Cookie"
+  },
+  "about": {
+    "title": "Informazioni su Waveful",
+    "subtitle": "Fai crescere la tua community.\nConosci nuove persone.",
+    "description": "Waveful è il luogo dove creatori e fan si connettono attraverso contenuti, sfide e comunità create per aiutarti a crescere più velocemente e guadagnare di più. Condividi i tuoi momenti migliori, avvia sfide e trasforma il tuo pubblico in una comunità attiva che ti supporta.",
+    "stats": {
+      "users": "Utenti",
+      "posts": "Post",
+      "creators": "Creatori",
+      "communities": "Comunità"
+    },
+    "counts": {
+      "users": 3000000,
+      "posts": 40000000,
+      "creators": 130000,
+      "communities": 250000
+    }
+  },
+  "legal": {
+    "title": "Documenti Legali",
+    "welcome": "Benvenuti nella sezione legale di Waveful",
+    "description": "Qui puoi trovare tutti i nostri documenti legali che regolano l'utilizzo della nostra piattaforma. Ti invitiamo a leggere attentamente questi documenti in quanto descrivono i tuoi diritti e doveri quando utilizzi Waveful.",
+    "documents": [
+      {
+        "title": "Termini di Utilizzo",
+        "description": "I termini e le condizioni generali che regolano l'utilizzo della piattaforma Waveful.",
+        "path": "/legal/termini-di-utilizzo"
+      },
+      {
+        "title": "Termini di Utilizzo - Clausole Specifiche",
+        "description": "Importanti clausole legali relative ai Termini di Utilizzo che richiedono particolare attenzione.",
+        "path": "/legal/termini-di-utilizzo/clausole-specifiche"
+      },
+      {
+        "title": "Termini di Utilizzo per i Creatori",
+        "description": "Termini e condizioni aggiuntivi specifici per i creatori che partecipano al Programma Creatori Waveful.",
+        "path": "/legal/termini-di-utilizzo/creatori"
+      },
+      {
+        "title": "Informativa sulla Privacy",
+        "description": "Informazioni su come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali.",
+        "path": "/legal/privacy"
+      },
+      {
+        "title": "Informativa sui Cookie",
+        "description": "Dettagli sui cookie e tecnologie simili utilizzate sulla nostra piattaforma.",
+        "path": "/legal/cookie"
+      }
+    ],
+    "lastUpdated": "Ultimo aggiornamento"
+  },
+  "cookies": {
+    "title": "Informativa sui Cookie",
+    "intro": "Ciao 👋",
+    "welcome": "Sono Waveful, il social network creator-friendly dove tutti possono diventare creatori di contenuti 🌊",
+    "description": "Prima di addentrarci nella nostra informativa sui cookie, permettimi di raccontarti brevemente la mia missione 🚀",
+    "mission": "Il mio obiettivo è essere un social network dove tutti possano condividere le proprie passioni e sentirsi accolti in un ambiente confortevole e positivo; dove i creatori possano prosperare e dove gli utenti possano godere di contenuti originali, trovare nuove connessioni significative e divertirsi.",
+    "dataUsage": "Raccolgo i dati utilizzando gli ultimi standard di sicurezza del settore e i dati raccolti vengono utilizzati con il solo scopo di offrirti la migliore esperienza che un social network possa offrire.",
+    "sections": {
+      "howTheyWork": "Come funzionano i Cookie",
+      "types": "Tipologie di Cookie utilizzati",
+      "management": "Gestione delle preferenze"
+    },
+    "lastUpdated": "Ultimo aggiornamento: 1° ottobre 2025"
+  },
+  "privacy": {
+    "title": "Informativa sulla Privacy",
+    "intro": "Ciao 👋",
+    "welcome": "Sono Waveful, il social network creator-friendly dove tutti possono diventare creatori di contenuti 🌊",
+    "missionTitle": "La mia missione 🚀",
+    "mission": "Il mio obiettivo è essere un social network dove tutti possano condividere le proprie passioni e sentirsi accolti in un ambiente confortevole e positivo; dove i creatori possano prosperare e dove gli utenti possano godere di contenuti originali, trovare nuove connessioni significative e divertirsi.",
+    "dataTitle": "Come utilizziamo i tuoi dati",
+    "dataUsage": "Raccogliamo i dati utilizzando gli ultimi standard di sicurezza del settore. I dati raccolti vengono utilizzati con il solo scopo di offrirti la migliore esperienza possibile su Waveful.",
+    "noSelling": "Waveful non vende i tuoi dati e non lo farà mai. La nostra sostenibilità si basa su elementi a pagamento nella piattaforma (come i like acquistabili e gli abbonamenti premium), ma le funzionalità principali di Waveful sono e rimarranno sempre gratuite.",
+    "contact": "Se hai domande o hai bisogno di aiuto per comprendere qualsiasi parte di questa informativa sulla privacy, non esitare a contattarci a",
+    "sections": {
+      "controller": "Titolare del Trattamento",
+      "definitions": "Definizioni",
+      "rights": "Diritti dell'interessato",
+      "changes": "Modifiche all'Informativa"
+    },
+    "lastUpdated": "Ultimo aggiornamento: 1° ottobre 2025"
+  },
+  "terms": {
+    "title": "Termini di Utilizzo",
+    "intro": "Ciao 👋",
+    "welcome": "Sono Waveful, il social network creator-friendly dove tutti possono diventare creatori di contenuti 🌊",
+    "missionTitle": "La mia missione 🚀",
+    "mission": "Il mio obiettivo è essere un social network dove tutti possano condividere le proprie passioni e sentirsi accolti in un ambiente confortevole e positivo; dove i creatori possano prosperare e dove gli utenti possano godere di contenuti originali, trovare nuove connessioni significative e divertirsi.",
+    "rules": "Per consentire il raggiungimento di questa missione ho stabilito alcune regole da seguire per tutti, in modo da poter offrire un luogo sicuro a chiunque. Spero che tu capisca che queste regole non sono qui per crearti inconvenienti, ma per permettere un'esperienza piacevole a ogni utente.",
+    "creatorNote": "Nota: se fai parte del Programma Creatori di Waveful, si applicano anche i Termini di Utilizzo per i Creatori.",
+    "contact": "Se hai domande o hai bisogno di aiuto per comprendere qualsiasi parte di questi termini, non esitare a contattarci a ${email}, saremo felici di aiutarti ✨",
+    "sections": {
+      "definitions": "Definizioni",
+      "registration": "Registrazione e Creazione dell'Account",
+      "userObligations": "Obblighi dell'Utente",
+      "intellectualProperty": "Proprietà Intellettuale",
+      "liability": "Limitazione di Responsabilità",
+      "changes": "Modifiche ai Termini"
+    },
+    "lastUpdated": "Ultimo aggiornamento: 1° ottobre 2025"
+  }
+}

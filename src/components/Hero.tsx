@@ -1,6 +1,6 @@
 import React from "react";
 
-//HeroUI
+// HeroUI
 import { Button, Image, Link } from "@heroui/react";
 import { motion } from "framer-motion";
 
@@ -9,8 +9,14 @@ import { FaApple, FaInstagram } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa6';
 import { SiGoogleplay } from 'react-icons/si';
 
+// Translation and Language
+import { useTranslation } from '@/hooks/useTranslation';
+import { useLanguage } from '@/contexts/LanguageContext';
+
 
 export default function Hero() {
+  const { t } = useTranslation();
+  const { language } = useLanguage();
   const videoSources = [
     "/videos/creator_000.mp4",
     "/videos/creator_001.mp4",
@@ -122,13 +128,13 @@ export default function Hero() {
 
       <div className={"flex flex-col"}>
       <h1 className="relative z-[2] text-4xl md:text-4xl lg:text-6xl font-semibold leading-tight px-6">
-        Your Community. <br className={"block md:hidden"} /> Your Wave.
+        {t('hero.title')}
       </h1>
 
       <div className="relative z-[2] mt-6 flex flex-wrap items-center justify-center gap-3 px-4">
         <Button
           as={Link}
-          href="https://apps.apple.com/us/app/waveful-become-a-creator/id1532913255 "
+          href="https://apps.apple.com/us/app/waveful-become-a-creator/id1532913255"
           isExternal
           rel="noopener noreferrer"
           radius={"lg"}
@@ -137,8 +143,8 @@ export default function Hero() {
           startContent={<FaApple className="h-12 w-12" />}
         >
           <span className="flex flex-col leading-tight text-left">
-            <span className="text-xs opacity-80">Download on the</span>
-            <span className="text-lg font-medium">App Store</span>
+            <span className="text-xs opacity-80">{t('hero.appStore.download')}</span>
+            <span className="text-lg font-medium">{t('hero.appStore.name')}</span>
           </span>
         </Button>
         <Button
@@ -152,8 +158,8 @@ export default function Hero() {
           startContent={<SiGoogleplay className="h-12 w-12" />}
         >
           <span className="flex flex-col leading-tight text-left">
-            <span className="text-xs opacity-80">Download on the</span>
-            <span className="text-lg font-medium">Play Store</span>
+            <span className="text-xs opacity-80">{t('hero.playStore.download')}</span>
+            <span className="text-lg font-medium">{t('hero.playStore.name')}</span>
           </span>
         </Button>
       </div>
@@ -165,7 +171,7 @@ export default function Hero() {
           href="https://help.waveful.com"
           className="rounded-full bg-white/10 hover:bg-white/20 text-sm backdrop-blur transition-colors"
         >
-          Contact us
+          {t('hero.contactUs')}
         </Button>
 
         <Button
@@ -173,7 +179,7 @@ export default function Hero() {
           href="/legal"
           className="rounded-full bg-white/10 hover:bg-white/20 text-sm backdrop-blur transition-colors"
         >
-          Legal
+          {t('hero.legal')}
         </Button>
 
         <Button
@@ -181,7 +187,7 @@ export default function Hero() {
           href="/legal/cookies"
           className="rounded-full bg-white/10 hover:bg-white/20 text-sm backdrop-blur transition-colors"
         >
-          Cookie Policy
+          {t('hero.cookiePolicy')}
         </Button>
 
         <Button
@@ -220,6 +226,16 @@ export default function Hero() {
           }
         />
 
+        {/* LEGACY: ONLY ITALY! */}
+        {language === 'it' && (
+          <Button className="w-48 p-0 bg-transparent">
+                <Image 
+                  src="/italy/logo_region.png" 
+                  alt="Regione Italiana" 
+                  className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                />
+          </Button>
+        )}
       </div>
 
     </section>

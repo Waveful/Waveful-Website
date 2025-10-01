@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 type UseCountUpOptions = {
   target: number;
@@ -104,25 +105,52 @@ function Stat({ label, target, suffix = "+" }: StatProps) {
 }
 
 export default function About() {
+  const { t } = useTranslation();
+  
+  // Split the subtitle into lines for proper rendering
+  const subtitleLines = t('about.subtitle').split('\n');
+  
+  // Get the numeric values from translations and ensure they're numbers
+  const stats = {
+    users: Number(t('about.counts.users')),
+    posts: Number(t('about.counts.posts')),
+    creators: Number(t('about.counts.creators')),
+    communities: Number(t('about.counts.communities'))
+  };
+  
   return (
     <section className="w-full mt-24 py-16 md:py-24 bg-black/50">
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-center text-default-900 mb-10">
-        <h2 className={"text-3xl md:text-6xl font-semibold"}>
-          Grow your community.
-          <br /> 
-          Meet new people.
-        </h2>
-        <p className={"mt-8 test-sm justify-center"}>
-         Waveful is where creators and fans connect through content, challenges, and communities built to help you grow faster and earn more. 
-         Share your best moments, start challenges, and turn your audience into an active community that supports you.
-        </p>
+          <h2 className="text-3xl md:text-6xl font-semibold">
+            {subtitleLines.map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                {index < subtitleLines.length - 1 && <br />}
+              </React.Fragment>
+            ))}
+          </h2>
+          <p className="mt-8 text-sm md:text-base justify-center">
+            {t('about.description')}
+          </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-14 justify-items-center">
-          <Stat label="Users" target={3_000_000} />
-          <Stat label="Posts" target={40_000_000} />
-          <Stat label="Creators" target={130_000} />
-          <Stat label="Communities" target={250_000} />
+          <Stat 
+            label={t('about.stats.users')} 
+            target={stats.users} 
+          />
+          <Stat 
+            label={t('about.stats.posts')} 
+            target={stats.posts} 
+          />
+          <Stat 
+            label={t('about.stats.creators')} 
+            target={stats.creators} 
+          />
+          <Stat 
+            label={t('about.stats.communities')} 
+            target={stats.communities} 
+          />
         </div>
       </div>
     </section>

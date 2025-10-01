@@ -1,28 +1,32 @@
-/* eslint-disable react/no-unescaped-entities */
 //NextJS
 import Head from "next/head";
 
 //Components
 import Hero from "@/components/Hero";
 
+// Translation
+import { useTranslation } from '@/hooks/useTranslation';
+
 export default function TermsOfUse() {
+  const { t } = useTranslation();
+  
   return (
     <>
       <Head>
-        <title>Terms of Use - Waveful</title>
+        <title>{t('terms.title')} - Waveful</title>
       </Head>
       <main>
         <section className="mx-auto max-w-[840px] mt-24 px-5 py-14">
-        <h1 className="text-3xl font-bold mb-4">Terms of Use</h1>
-        <h2 className="text-xl font-bold mt-6 mb-2">Hi 👋</h2>
-        <p className="mb-4">I'm Waveful, the creator-friendly social network where everyone can become a creator 🌊</p>
-        <p className="mb-4">Before diving in a more formal explanation of our Terms of Use, let me briefly tell you my mission 🚀</p>
-        <p className="mb-4">My goal is to be a social network where everyone can share their passions and feel welcomed in a comfortable and positive environment; where creators can thrive and where users can enjoy original content, find new meaningful connections and have fun. I hope I'm doing well in this, but you be the judge!</p>
-        <p className="mb-4">To allow the accomplishment of this mission I set some rules for everyone to follow, so I can provide a safe place for everyone. I hope you understand that these rules are here not for giving you any inconvenience but for allowing an enjoyable experience to every user. Therefore, content that can lead to a negative or harmful environment cannot be posted on Waveful.</p>
-        <p className="mb-6">Now I'll leave you to a more formal explanation of my Terms of Use, and thanks for being here!</p>
-        <p className="mb-6">And if you need any help on understanding any part of this document, send us a message at <a href="mailto:support@waveful.app" className="underline">support@waveful.app</a>, will be happy to help you ✨</p>
-
-        <p className="mb-6">Note: if you enrolled in the Creator Program of Waveful, also the Terms of Use for Creators apply to you.</p>
+          <h1 className="text-3xl font-bold mb-4">{t('terms.title')}</h1>
+          <h2 className="text-xl font-bold mt-6 mb-2">{t('terms.intro')}</h2>
+          <p className="mb-4">{t('terms.welcome')}</p>
+          <h3 className="text-lg font-bold mt-6 mb-2">{t('terms.missionTitle')}</h3>
+          <p className="mb-4">{t('terms.mission')}</p>
+          <p className="mb-4">{t('terms.rules')}</p>
+          <p className="mb-6">{t('terms.creatorNote')}</p>
+          <p className="mb-6" dangerouslySetInnerHTML={{
+            __html: t('terms.contact').replace('${email}', '<a href="mailto:support@waveful.app" class="underline">support@waveful.app</a>')
+          }} />
 
         <h2 className="text-xl font-bold mt-6 mb-2">Recitals and Definitions</h2>
         These terms and conditions of use (the "Conditions" or the "Agreement") govern the access and use by the User of the application called "Waveful" (the "Platform"), created and provided by Waveful S.r.l., with headquarters in Italy, 20121 Milan (MI), Via Daniele Manin 3, VAT Identification Number IT12343330960, e-mail for communications termsofuse@waveful.app (the "Provider").

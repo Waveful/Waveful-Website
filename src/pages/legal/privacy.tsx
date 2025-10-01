@@ -1,39 +1,52 @@
-/* eslint-disable react/no-unescaped-entities */
 //NextJS
 import Head from "next/head";
 
 //Components
 import Hero from "@/components/Hero";
 
-export default function PrivacyPolicy() {
+// Translation
+import { useTranslation } from '@/hooks/useTranslation';
+
+export default function Privacy() {
+  const { t } = useTranslation();
+  
   return (
     <>
       <Head>
-        <title>Privacy Policy - Waveful</title>
+        <title>{t('privacy.title')} - Waveful</title>
       </Head>
       <main>
         <section className="mx-auto max-w-[840px] mt-24 px-5 py-14">
-          Privacy Policy
-          Hi 👋
-          I'm Waveful, the creator-friendly social network where everyone can become a creator 🌊
-
-          Before diving in a more formal explanation of our privacy policy, let me briefly tell you my mission 🚀
-          My goal is to be a social network where everyone can share their passions and feel welcomed in a comfortable and positive environment; where creators can thrive and where users can enjoy original content, find new meaningful connections and have fun. I hope I'm doing well in this, but you be the judge!
-
-          I collect data using the latest industry security standards, and the collected data is used with the only goal of delivering the best experience a social network can offer 📡
-          Waveful does not sell your data and will never do. In fact, to be sustainable, Waveful has some paid elements in the platform (purchasable likes and premium subscriptions). I know some users don't like to pay for a service, but the core functionalities of Waveful are free and will always remain free, and you can still enjoy the Waveful experience without spending a single cent!
-
-          Now I'll leave you to a more formal explanation of our data collection practices, and thanks for being here!
-
-          And if you need any help on understanding any part of this privacy policy, send us a message at support@waveful.app, will be happy to help you ✨
-
-          Introduction
-          Controller: Waveful S.r.l., with headquarters in Italy, 20121 Milan (MI), Via Daniele Manin 3, VAT Identification Number IT12343330960, e-mail privacy@waveful.app.
-
-          Pursuant to and for the purposes of art. 13 of Regulation (EU) no. 2016/679 of the European Parliament and of the Council of 27 April 2016 concerning the protection of individuals with regard to the Processing of Personal Data, as well as the free circulation of such Data (the "Regulation" or the "GDPR") and legislative decree 30 June 2003, n. 196 "Code regarding the protection of personal data" ("Code") (Code and Regulations also jointly defined as "Regulations") we inform the interested parties ("Data Subjects") that their Personal Data will be processed in compliance with the Regulations and what is specified below.
-
-          0) Definitions
-          Authorized
+          <h1 className="text-3xl font-bold mb-4">{t('privacy.title')}</h1>
+          <h2 className="text-xl font-bold mt-6 mb-2">{t('privacy.intro')}</h2>
+          <p className="mb-4">{t('privacy.welcome')}</p>
+          <h3 className="text-lg font-bold mt-6 mb-2">{t('privacy.missionTitle')}</h3>
+          <p className="mb-4">{t('privacy.mission')}</p>
+          <h3 className="text-lg font-bold mt-6 mb-2">{t('privacy.dataTitle')}</h3>
+          <p className="mb-4">{t('privacy.dataUsage')}</p>
+          <p className="mb-6">{t('privacy.noSelling')}</p>
+          <p className="mb-6" dangerouslySetInnerHTML={{
+            __html: t('privacy.contact').replace('${email}', '<a href="mailto:privacy@waveful.app" class="underline">privacy@waveful.app</a>')
+          }} />
+          
+          <h2 className="text-xl font-bold mt-6 mb-2">Introduction</h2>
+          <p className="mb-4">
+            <strong>Controller:</strong> Waveful S.r.l., with headquarters in Italy, 20121 Milan (MI), 
+            Via Daniele Manin 3, VAT Identification Number IT12343330960, 
+            email: privacy@waveful.app.
+          </p>
+          
+          <p className="mb-6">
+            Pursuant to and for the purposes of art. 13 of Regulation (EU) no. 2016/679 of the European Parliament 
+            and of the Council of 27 April 2016 concerning the protection of individuals with regard to the 
+            Processing of Personal Data, as well as the free circulation of such Data (the "Regulation" or the "GDPR") 
+            and legislative decree 30 June 2003, n. 196 "Code regarding the protection of personal data" ("Code") 
+            (Code and Regulations also jointly defined as "Regulations") we inform the interested parties 
+            ("Data Subjects") that their Personal Data will be processed in compliance with the Regulations 
+            and what is specified below.
+          </p>
+          
+          <h3 className="text-lg font-bold mt-6 mb-2">0) Definitions</h3>
           the natural persons authorized to carry out Processing operations under the direct authority of the Controller or the Processor, pursuant to art. 29 of the Regulation and art.2-quaterdecies of the Code.
           Communication
           ‍the giving knowledge of Personal Data to one or more specific subjects other than the Data Subject, the Controller's representative in the State, the Processor and the Authorized, in any form, including by making them available or consulting.
