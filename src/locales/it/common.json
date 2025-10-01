@@ -52,17 +52,17 @@
       {
         "title": "Termini di Utilizzo",
         "description": "I termini e le condizioni generali che regolano l'utilizzo della piattaforma Waveful.",
-        "path": "/legal/termini-di-utilizzo"
+        "path": "/legal/terms-of-use"
       },
       {
         "title": "Termini di Utilizzo - Clausole Specifiche",
         "description": "Importanti clausole legali relative ai Termini di Utilizzo che richiedono particolare attenzione.",
-        "path": "/legal/termini-di-utilizzo/clausole-specifiche"
+        "path": "/legal/terms-of-use-specific-clauses"
       },
       {
         "title": "Termini di Utilizzo per i Creatori",
         "description": "Termini e condizioni aggiuntivi specifici per i creatori che partecipano al Programma Creatori Waveful.",
-        "path": "/legal/termini-di-utilizzo/creatori"
+        "path": "/legal/terms-of-use-for-creators"
       },
       {
         "title": "Informativa sulla Privacy",
@@ -72,7 +72,7 @@
       {
         "title": "Informativa sui Cookie",
         "description": "Dettagli sui cookie e tecnologie simili utilizzate sulla nostra piattaforma.",
-        "path": "/legal/cookie"
+        "path": "/legal/cookies"
       }
     ],
     "lastUpdated": "Ultimo aggiornamento"

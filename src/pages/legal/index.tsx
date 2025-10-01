@@ -21,17 +21,14 @@ export default function LegalIndex() {
   
   useEffect(() => {
     try {
-      const docsData = t('legal.documents');
+      // Use returnRaw to get the actual array instead of a string
+      const docsData = t<LegalDocument[]>('legal.documents', true);
       
-      // Handle different possible return types from t()
       if (Array.isArray(docsData)) {
-        setDocuments(docsData as unknown as LegalDocument[]);
-      } else if (docsData && typeof docsData === 'object') {
-        // If it's an object, try to convert it to an array
-        const docsArray = Object.values(docsData);
-        if (Array.isArray(docsArray)) {
-          setDocuments(docsArray as unknown as LegalDocument[]);
-        }
+        setDocuments(docsData);
+      } else {
+        console.error('Expected documents to be an array, got:', docsData);
+        setDocuments([]);
       }
     } catch (error) {
       console.error('Error loading legal documents:', error);

@@ -19,7 +19,7 @@ export const useTranslation = () => {
     []
   );
 
-  const t = (key: string): string => {
+  const t = <T = string>(key: string, returnRaw = false): T | string => {
     const keys = key.split('.');
     let value: NestedValue | NestedObject = translations[language as Locale];
     
@@ -32,9 +32,19 @@ export const useTranslation = () => {
       }
     }
     
+    // If returnRaw is true, return the raw value (for objects and arrays)
+    if (returnRaw) {
+      return value as T;
+    }
+    
     // If we have a string, number, or boolean, convert it to string
     if (value === null || value === undefined) {
       return key;
+    }
+    
+    // For objects and arrays, return as is if returnRaw is true, otherwise stringify
+    if (typeof value === 'object') {
+      return JSON.stringify(value);
     }
     
     return String(value);

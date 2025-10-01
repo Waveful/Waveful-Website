@@ -78,7 +78,7 @@ export default function TermsOfUseForCreators() {
           <p className="mb-4">4.1. This Agreement is governed by Italian law, with the exclusion of any reference to the legislation on international private law;</p>
           <p className="mb-10">4.2. For any dispute relating to the validity, existence, interpretation, application, execution and/or termination of one or more clauses of this Agreement, or in any case deriving from it in any way, the Court of Rome will have exclusive territorial jurisdiction, with the express exclusion of any alternative and/or competing forum.</p>
           
-          <p className="text-gray-600">Published on December 23, 2022.</p>
+          <p className="text-gray-200">Published on December 23, 2022.</p>
         </section>
         <Hero />
       </main>

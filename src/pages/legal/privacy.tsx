@@ -143,7 +143,7 @@ export default function Privacy() {
 
             <div className="space-y-6">
               {/* Operation 1 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">Allow registration to Waveful services.</p>
                 
@@ -163,7 +163,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 2 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">Management of the user&apos;s personal profile on the platform and Contents upload.</p>
                 
@@ -183,7 +183,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 3 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Interactions with other users (through messaging services and through the ability to &quot;react&quot; to other users&apos; contents, for example, with likes, Superlikes and comments), exporting Contents from other users.
@@ -207,7 +207,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 4 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Request to find friends and contacts that are already on Waveful through Contacts uploading. Allow to be findable by friends and contacts.
@@ -233,7 +233,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 5 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Create a unique link to allow the user to receive benefits and/or rewards upon registration of invited friends.
@@ -257,7 +257,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 6 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Purchase of premium/paid services through device stores (e.g., Google Play Store, Apple App Store).
@@ -283,7 +283,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 7 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Payments relating to the compensation accrued by a Creator user.
@@ -309,7 +309,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 8 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Receipt and storage of tax documents required by current legislation.
@@ -335,7 +335,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 9 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Sending of non-commercial communications to the user (notices on activities carried out on the platform).
@@ -361,7 +361,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 10 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Sale of physical products through the Controller&apos;s website and subsequent shipment to the user.
@@ -387,7 +387,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 11 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Issuing an invoice or equivalent tax documentation relating to the purchase of products on Controller&apos;s website.
@@ -413,7 +413,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 12 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Managing user support requests.
@@ -439,7 +439,7 @@ export default function Privacy() {
               </div>
 
               {/* Operation 13 */}
-              <div className="bg-gray-50 p-4 rounded-md">
+              <div className="p-4 rounded-md">
                 <h4 className="font-semibold mb-2">Operation:</h4>
                 <p className="mb-3">
                   Provisioning the services offered by the application.
