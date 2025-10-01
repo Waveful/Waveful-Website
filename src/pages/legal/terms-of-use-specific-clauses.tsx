@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 //NextJS
 import Head from "next/head";
+import Link from "next/link";
 
 //Components
 import Hero from "@/components/Hero";
@@ -15,7 +16,7 @@ export default function TermsOfUseSpecificClauses() {
         <section className="mx-auto max-w-[840px] mt-24 px-5 py-14">
           <h1 className="text-3xl font-bold mb-4">Terms of Use - Specific Clauses</h1>
           
-          <p className="mb-6">The User expressly approves, after having carefully read them, the contents of the following clauses that refer to the <a href="/legal/terms-of-use" className="text-gray-300 underline">Terms of Use</a>:</p>
+          <p className="mb-6">The User expressly approves, after having carefully read them, the contents of the following clauses that refer to the <Link href="/legal/terms-of-use" className="text-gray-300 underline">Terms of Use</Link>:</p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4">Art. 2 - Modification of the Conditions</h2>
           <p className="mb-6">The Provider reserves the right to modify these Conditions at any time, giving notice to the User by publishing the updated version on the Platform. The User's continued use of the Platform after such publication will constitute acceptance of the modified Conditions.</p>
