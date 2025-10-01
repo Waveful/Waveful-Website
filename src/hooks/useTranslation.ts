@@ -8,7 +8,7 @@ type NestedValue = string | number | boolean | null | undefined | NestedObject;
 type NestedObject = { [key: string]: NestedValue | NestedObject };
 type Translations = Record<Locale, NestedObject>;
 
-export const useTranslation = () => {
+const useTranslation = () => {
   const { language } = useLanguage();
 
   const translations = useMemo<Translations>(

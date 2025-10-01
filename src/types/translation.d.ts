@@ -1,8 +1,11 @@
 import { useTranslation as originalUseTranslation } from '@/hooks/useTranslation';
 
 declare module '@/hooks/useTranslation' {
-  export function useTranslation(): {
+  interface TranslationReturn {
     t: <T = string>(key: string, returnRaw?: boolean) => T | string;
-    locale: string;
-  };
+  }
+  
+  function useTranslation(): TranslationReturn;
+  
+  export default useTranslation;
 }
