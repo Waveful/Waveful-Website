@@ -84,6 +84,7 @@
     "description": "Before diving into our cookie policy, let me tell you what you can find in this page. We will start with a general explanation on how tracking tools (also known as \"cookies\") work, the current classification of tracking tools and how to manage cookies on your browser.",
     "mission": "My goal is to be a social network where everyone can share their passions and feel welcomed in a comfortable and positive environment; where creators can thrive and where users can enjoy original content, find new meaningful connections and have fun.",
     "dataUsage": "I collect data using the latest industry security standards, and the collected data is used with the only goal of delivering the best experience a social network can offer.",
+    "howTrackingToolsWork": "How Tracking Tools Work",
     "sections": {
       "howTheyWork": "How Tracking Tools Work",
       "types": "Types of Cookies Used",
@@ -127,5 +128,4 @@
       "changes": "Changes to the Terms"
     },
     "lastUpdated": "Last updated: October 1, 2025"
-  }
-}
+  }}
