@@ -229,7 +229,7 @@ export default function TermsOfUse() {
           <h2 className="text-xl font-bold mt-6 mb-4">Art. 8 - Duration and withdrawal of the User</h2>
           <p className="mb-4">8.1. The contractual relationship between the Provider and the User shall have an indefinite duration.</p>
           
-          <p className="mb-4">8.2. However, the User is informed that he may withdraw from this Agreement at any time, without specifying the reasons and without penalty, using the automatic account deactivation procedure available within the User's Account.</p>
+          <p className="mb-4">8.2. However, the User is informed that he may withdraw from this Agreement at any time, without specifying the reasons and without penalty, using the automatic account deactivation procedure available within the User&apos;s Account.</p>
           
           <p className="mb-4">8.3. In the event that the User withdraws from this Agreement pursuant to the previous art. 8.2, the Provider will keep the User Data and Contents for a period of 30 (thirty) days from the deactivation of the Account. With the exception of the cases provided for by art. 135 noviesdecies, paragraph 5, of the Consumer Code (by way of example only, the number of likes and/or Superlikes used by the User), during this period the User has the right to ask the Provider to return the uploaded Data and Contents in a commonly used and machine-readable format. Without prejudice to the provisions of art. 5.5, the Provider undertakes to delete the User Contents and Data from its databases, as soon as possible and, in any case, no later than 30 (thirty) days after the expiry of the previous term.</p>
         </article>
