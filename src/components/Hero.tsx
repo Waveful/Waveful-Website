@@ -192,13 +192,13 @@ export default function Hero() {
 
         <Button
           as={Link}
-          href="https://www.tiktok.com/@waveful"
+          href="https://www.tiktok.com/@waveful.app"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="TikTok"
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
           startContent={
-            <FaTiktok className="h-5 w-5" />
+            <Fa className="h-5 w-5" />
           }
         />
 
@@ -207,7 +207,7 @@ export default function Hero() {
           href="https://www.instagram.com/waveful"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="TikTok"
+          aria-label="Instagram"
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
           startContent={
             <FaInstagram className="h-5 w-5" />
