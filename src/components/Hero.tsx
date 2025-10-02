@@ -198,7 +198,7 @@ export default function Hero() {
           aria-label="TikTok"
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
           startContent={
-            <Fa className="h-5 w-5" />
+            <FaTiktok className="h-5 w-5" />
           }
         />
 
