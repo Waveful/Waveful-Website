@@ -128,4 +128,37 @@
       "changes": "Changes to the Terms"
     },
     "lastUpdated": "Last updated: October 1, 2025"
-  }}
+  },
+  "brand": {
+    "title": "Brand Assets",
+    "description": "Download official Waveful logos and app icons for your projects. All assets are provided in multiple formats and sizes.",
+    "download": "Download",
+    "appIcons": {
+      "title": "App Icons",
+      "description": "Official Waveful app icons in various shapes and formats for mobile applications."
+    },
+    "logos": {
+      "title": "Logos",
+      "description": "Waveful brand logos in different color variations for web and print use."
+    },
+    "guidelines": {
+      "title": "Brand Guidelines",
+      "usage": {
+        "title": "Usage Guidelines",
+        "rule1": "Use only official Waveful assets provided here",
+        "rule2": "Do not modify colors, proportions, or add effects",
+        "rule3": "Maintain clear space around the logo (minimum 1x the height of the logo)"
+      },
+      "technical": {
+        "title": "Technical Requirements",
+        "rule1": "PNG files are optimized for web use",
+        "rule2": "SVG files are scalable and perfect for print",
+        "rule3": "Use high-resolution versions for print materials"
+      }
+    },
+    "contact": {
+      "text": "Need custom assets or have questions about brand usage?",
+      "button": "Contact Us"
+    }
+  }
+}

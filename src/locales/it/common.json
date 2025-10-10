@@ -127,5 +127,37 @@
       "changes": "Modifiche ai Termini"
     },
     "lastUpdated": "Ultimo aggiornamento: 1° ottobre 2025"
+  },
+  "brand": {
+    "title": "Asset del Brand",
+    "description": "Scarica i loghi ufficiali di Waveful e le icone dell'app per i tuoi progetti. Tutti gli asset sono forniti in più formati e dimensioni.",
+    "download": "Scarica",
+    "appIcons": {
+      "title": "Icone App",
+      "description": "Icone ufficiali dell'app Waveful in varie forme e formati per applicazioni mobili."
+    },
+    "logos": {
+      "title": "Loghi",
+      "description": "Loghi del brand Waveful in diverse variazioni di colore per uso web e stampa."
+    },
+    "guidelines": {
+      "title": "Linee Guida del Brand",
+      "usage": {
+        "title": "Linee Guida d'Uso",
+        "rule1": "Usa solo gli asset ufficiali di Waveful forniti qui",
+        "rule2": "Non modificare colori, proporzioni o aggiungere effetti",
+        "rule3": "Mantieni spazio libero intorno al logo (minimo 1x l'altezza del logo)"
+      },
+      "technical": {
+        "title": "Requisiti Tecnici",
+        "rule1": "I file PNG sono ottimizzati per l'uso web",
+        "rule2": "I file SVG sono scalabili e perfetti per la stampa",
+        "rule3": "Usa versioni ad alta risoluzione per materiali stampati"
+      }
+    },
+    "contact": {
+      "text": "Hai bisogno di asset personalizzati o hai domande sull'uso del brand?",
+      "button": "Contattaci"
+    }
   }
 }
