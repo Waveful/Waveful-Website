@@ -142,7 +142,7 @@ export default function Brand() {
               {t("brand.contact.text")}
             </p>
             <a
-              href="mailto:hello@waveful.app"
+              href="https://help.waveful.com"
               className="inline-flex items-center px-6 py-3 bg-white text-black rounded-xl transition-colors duration-200 font-medium"
             >
               {t("brand.contact.button")}
