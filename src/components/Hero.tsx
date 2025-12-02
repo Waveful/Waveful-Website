@@ -222,7 +222,7 @@ export default function Hero() {
           aria-label="Waveful"
           className="rounded-full bg-white/10 hover:bg-white/20 p-2 backdrop-blur transition-colors"
           startContent={
-            <Image src={"/logo_waveful_social.svg"} alt="Waveful Logo" className={"h-6 x-6 hover:cursor-pointer"} />
+            <Image src={"/waveful-app.png"} alt="Waveful Logo" className={"h-6 x-6 hover:cursor-pointer"} />
           }
         />
 

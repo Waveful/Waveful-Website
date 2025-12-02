@@ -24,19 +24,19 @@ export default function Brand() {
       files: [
         {
           name: "Circle",
-          url: "/app_icon_waveful_circle.png",
+          url: "/brand/waveful-logo-cirlce.png",
           format: "PNG",
           size: "1024x1024"
         },
         {
           name: "Rounded",
-          url: "/app_icon_waveful_rounded.png",
+          url: "/brand/waveful-logo-rounded.png",
           format: "PNG",
           size: "1024x1024"
         },
         {
           name: "Square",
-          url: "/app_icon_waveful_square.png",
+          url: "/brand/waveful-logo-square.png",
           format: "PNG",
           size: "1024x1024"
         }
@@ -48,22 +48,17 @@ export default function Brand() {
       files: [
         {
           name: "Black",
-          url: "/logo_waveful_black.png",
+          url: "/brand/waveful-text-black.png",
           format: "PNG"
         },
         {
-          name: "Coloured",
-          url: "/logo_waveful_coloured.png",
-          format: "PNG"
-        },
-        {
-          name: "Social",
-          url: "/logo_waveful_social.png",
+          name: "Blue",
+          url: "/brand/waveful-text-blue.png",
           format: "PNG"
         },
         {
           name: "White",
-          url: "/logo_waveful_white.png",
+          url: "/brand/waveful-text-white.png",
           format: "PNG"
         }
       ]
@@ -101,18 +96,18 @@ export default function Brand() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                   {section.files.map((file, fileIndex) => (
                     <div
                       key={fileIndex}
-                      className="bg-gray-200 rounded-xl p-6"
+                      className="bg-gray-200 rounded-xl p-8 w-full max-w-md"
                     >
                       <div className="text-center">
-                        <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center ">
+                        <div className="w-48 h-48 mx-auto mb-6 flex items-center justify-center ">
                           <img 
                             src={file.url} 
                             alt={`${file.name} ${file.format}`}
-                            className="w-16 h-16 object-contain"
+                            className="w-40 h-40 object-contain"
                           />
                         </div>
                         <h3 className="font-semibold text-black mb-2">
