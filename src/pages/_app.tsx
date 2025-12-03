@@ -17,7 +17,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 // SEO
 const seoData = {
   siteName: "Waveful - Your Community, Your Wave",
-  favicon: "/app_icon_waveful_rounded.png",
+  favicon: "/favicon.ico",
 };
 
 export default function App({ Component, pageProps }: AppProps) {
